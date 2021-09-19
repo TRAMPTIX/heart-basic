@@ -26,11 +26,11 @@ def predict():
 
     prediction = model.predict(input_data_reshaped)
     if (prediction[0] == 0):
-        output = "no risk of heart disease"
+        output = "IS HEALTHY"
     else:
-        output= "risk of heart disease"
+        output= "MAY HAVE  heart disease"
 
-    return render_template('index.html', prediction_text='person has 89.9% {}'.format(output))
+    return render_template('index.html', prediction_text='PERSON  {}'.format(output))
 
 
 if __name__ == "__main__":
